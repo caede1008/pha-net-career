@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="" type="image/x-icon">
+	<link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<title>ファーネットキャリア</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="./image/FV.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/2FV下.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/3human.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/4doukitensyoku.jpg" alt="画像">
+        </section>
+        <section>
+            <ul class="slider" id="js-slider1">
+                <li><img src="./image/kyujin1-1.jpg" alt="サンプル1"></li>
+                <li><img src="./image/kyujin1-2.jpg" alt="サンプル2"></li>
+                <li><img src="./image/kyujin1-3.jpg" alt="サンプル1"></li>
+                <li><img src="./image/kyujin1-4.jpg" alt="サンプル2"></li>
+                <li><img src="./image/kyujin1-5.jpg" alt="サンプル1"></li>
+            </ul>
+        </section>
+        <section>
+            <img src="./image/6kaiwa.jpg" alt="画像">
+        </section>
+        <section class="hikoukai-section">
+            <div class ="hikoukai-background"><img src="./image/7_hikoukaikyujin.jpg"></div>
+            <ul class="slider" id="js-slider2">
+                <li><img src="./image/kyujin2-1.jpg" alt="サンプル1"></li>
+                <li><img src="./image/kyujin2-2.jpg" alt="サンプル1"></li>
+                <li><img src="./image/kyujin2-3.jpg" alt="サンプル1"></li>
+            </ul>
+            <div class ="slider-padding-box">
+                
+            </div>
+        </section>
+        <section>
+            <img src="./image/8why.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/9merit.jpg" alt="画像">
+        </section>
+        <section class ="cta-section1">
+            <div class ="cta-section1-background"><img src="./image/11CTA.jpg"></div>
+            <a class="button-box1">
+                <img src="image/CTA.png" class="cta-button">
+            </a>
+        </section>
+        <section>
+            <img src="./image/12kutikomi.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/13tensyokugo.jpg" alt="画像">
+        </section>
+        <section>
+            <img src="./image/14merit.jpg" alt="画像">
+        </section>
+        <section class="video-section">
+            <video class="smart-phone-video" autoplay loop muted playsinline>
+                <source src="./movie/RD_p.mp4">
+            </video>
+        </section>
+        <section>
+            <img src="./image/15yokata.jpg" alt="画像">
+        </section>
+        <section class="cta-section2">
+            <div class ="cta-section1-background"><img src="./image/CTA.jpg"></div>
+            <a class="button-box2">
+                <img src="image/CTA.png" class="cta-button">
+            </a>
+        </section>
+        <section class="blank-section"></section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function() {
+            $('#js-slider1').slick({
+                slidesToShow: 1,
+                prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"></button>',
+                infinite: true,
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#js-slider2').slick({
+                slidesToShow: 1,
+                prevArrow: '<button class="slide-arrow prev-arrow2"><</button>',
+                nextArrow: '<button class="slide-arrow next-arrow2">></button>',
+                infinite: true,
+                dots: true,
+                dotsClass: "slide-dots",
+            });
+        });
+    </script>
+</body>
+</html>
